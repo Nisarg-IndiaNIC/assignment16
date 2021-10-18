@@ -51,7 +51,7 @@ class _AssignmentsixState extends State<Assignmentsix> {
               child: ClipRRect(
                   borderRadius: BorderRadius.circular(20),
                   child: Image.network(
-                    "https://images.unsplash.com/photo-1524250502761-1ac6f2e30d43?ixid=MnwxMjA3fDB8MHxwaG9 0by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=3988&q=80",
+                   '${assignment?.profilepic}',
                     fit: BoxFit.fill,
                   )),
             ),
@@ -68,7 +68,7 @@ class _AssignmentsixState extends State<Assignmentsix> {
                         children: [
                           Text(
                          '${assignment?.firstname}',
-                            style: TextStyle(
+                            style:const TextStyle(
                                 fontSize: 18, fontWeight: FontWeight.w600),
                           ),
                           SizedBox(
@@ -129,6 +129,7 @@ class _AssignmentsixState extends State<Assignmentsix> {
                 )),
             Container(
               padding: EdgeInsets.only(left: 30, right: 30),
+              color: Color(0xffFFF8ED),
               height: 78,
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,

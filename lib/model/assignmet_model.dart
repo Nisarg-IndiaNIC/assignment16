@@ -16,9 +16,9 @@ class Assignment {
   String? country;
   String? bio;
   String? profilepic;
-  String? post;
-  String? followers;
-  String? following;
+  int? post;
+  int? followers;
+  int? following;
 
   factory Assignment.fromJson(Map<String, dynamic> parsedJson) {
     return Assignment(
